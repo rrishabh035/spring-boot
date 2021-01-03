@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://wwww.w3.org/1999/xhtml"
+	xmlns:th="http://wwww.thymeleaf.org"
+	xmlns:sec="http://wwww.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+	<title>Dashboard Page</title>
+</head>
+
+<body>
+	
+	<h1>Hello [[${#httpServletRequest.remoteUser}]]</h1>
+	<a th:href="@{/logout}">Log out</a>
+
+
+
+</body>
+
+</html>
